@@ -1,0 +1,38 @@
+<div class="wrapper wrapper_padding clearfix">
+    <div class="col-1 about homepage_content">
+        <h2>About</h2>
+        <hr>
+        <p>I'm a designer &amp; developer living in Abuja, Nigeria.</p>
+        <p>By day I work as a front-end dev/designer at PTCIJ, by night I teach how to design & code rails applications at <a href="#">Unicasts</a> .</p>
+        <p>You can find me speaking in 140 characters on Twitter, swooshing some pixels on Dribbble, and sharing some code on Github.</p>
+        <p>This blog was built as part of a project to becoming a full stack developer. Using <b>HTML</b>, <b>CSS</b>, <b>JAVASCRIPT</b> and <b>PHP</b>.</p>
+        <p>Feel free to drop a message on the contact page.</p>
+    </div>
+
+    <div class="col-2 homepage_content">
+        <h2>Stuff I've Written</h2>
+        <hr>
+        <% @posts.each do |post| %>
+            <h3><a href="#"><%= link_to post.title, post %></a></h3>
+            <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+        <% end %>
+        <!--<h3><a href="#">The DO list</a></h3>
+        <p class="date">Friday April 10th</p>
+        <h3><a href="#">How do I learn "X"?</a></h3>
+        <p class="date">Friday April 10th</p>
+        <h3><a href="#">Strive for the uncomfortable</a></h3>
+        <p class="date">Friday April 10th</p>-->	
+    </div>
+
+    <div class="col-3 homepage_content">
+        <h2>Stuff I've Built</h2>
+        <hr>
+        <h3><a href="#">Unicasts</a></h3>
+        <p class="date">Friday April 10th</p>
+        <h3><a href="#">Dev Community</a></h3>
+        <p class="date">Friday April 10th</p>
+        <h3><a href="#">1 in 1 Challenge</a></h3>
+        <p class="date">Friday April 10th</p>	
+
+    </div>
+</div>
