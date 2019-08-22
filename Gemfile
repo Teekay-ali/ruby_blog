@@ -16,6 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet'
+gem "yajl-ruby", ">= 1.3.1"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
